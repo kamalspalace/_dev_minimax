@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ADDRESS_BOOK>
+  <entries_per_page>5</entries_per_page>
+    <page_numbers>5</page_numbers>
+    <new_address_temp>address_international</new_address_temp>
+    <content>
+        <block width="33%">
+            <label class="shipon_label">address_name</label>
+            <input type="text" name="shipon_name" class="shipon_input shipon_disabled" disabled="true" value="name"></input>
+        </block>
+		
+		<block width="33%">
+            <label class="shipon_label">address_contact</label>
+            <input type="text" name="shipon_contact" class="shipon_input shipon_disabled" disabled="true" value="contact"></input>
+        </block>
+
+        <block width="22%">
+            <label class="shipon_label">address_phone</label>
+            <input type="text" name="shipon_phone" class="shipon_input shipon_disabled" disabled="true" value="phone" onKeyDown="formatTelNo (this);"></input>
+        </block>
+        
+        <block width="12%">
+            <label>address_phone_ext</label>
+            <input type="text" name="shipon_phone_ext" class="shipon_input shipon_disabled" disabled="true" value="ext"></input>
+        </block>
+        
+
+        <block width="33%">
+            <label class="shipon_label">address_street1</label>
+            <input type="text" name="shipon_street1" class="shipon_input shipon_disabled" disabled="true" value="street1"></input>
+        </block>
+
+        <block width="33%">
+            <label class="shipon_label">address_street2</label>
+            <input type="text" name="shipon_street2" class="shipon_input shipon_disabled" disabled="true" value="street2"></input>
+        </block>
+		
+		<block width="34%">
+            <label class="shipon_label">address_email</label>
+            <input type="text" name="shipon_email" class="shipon_input shipon_disabled" disabled="true" value="email"></input>
+        </block>
+
+        <block width="33%">
+            <label class="shipon_label">address_city</label>
+            <input type="text" name="shipon_city"  class="shipon_input shipon_disabled" disabled="true" value="city"></input>
+        </block>
+
+        <block width="33%">
+            <label class="shipon_label">address_province</label>
+            <input type="text" name="shipon_province"  class="shipon_input shipon_autocomplete shipon_disabled" disabled="true" value="province" autocomplete_type="province" modifier="shipon_country"></input>
+        </block>
+
+        <block width="21%">
+            <label class="shipon_label">address_country</label>
+			<LIST_OF_COUNTRIES>
+				<select id="shipon_country" name="shipon_country" class="shipon_select shipon_disabled" disabled="true" value="country">
+				</select>
+			</LIST_OF_COUNTRIES>
+        </block>
+
+        <block width="13%">
+            <label>address_postal</label>
+            <input type="text" name="shipon_postal" class="shipon_input shipon_disabled" disabled="true" value="postal" maxlength="6"></input>
+        </block>
+    </content>
+</ADDRESS_BOOK>

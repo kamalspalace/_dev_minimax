@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<BOL>
+    <SECTION title="bol_address">
+		<ROW>
+			<COLUMN width="33%">
+				<element width="100%" template="shipper_account_no"/>
+			</COLUMN>
+			<COLUMN width="34%">
+				<element width="100%" template="shipment_date"/>
+			</COLUMN>
+			<COLUMN width="33%">
+				<element width="100%" template="shipper_reference_no"/>
+			</COLUMN>
+		</ROW>
+		<ROW>
+			<COLUMN width="50%">
+				<element width="100%" template="shipper_na"/>
+			</COLUMN>
+			<COLUMN width="50%">
+				<element width="100%" template="consignee_na_billto"/>
+			</COLUMN>
+		</ROW>
+	</SECTION>
+	<SECTION title="bol_goods">
+        <ROW>
+            <COLUMN width="100%">
+				<element width="100%" template="goods_table_simple"/>
+			</COLUMN>
+        </ROW>
+	</SECTION>
+	<SECTION title="bol_details">
+        <ROW>
+            <COLUMN width="50%">
+				<element width="100%" template="vehicle"/>
+			</COLUMN>
+            <COLUMN width="50%">
+				<element width="100%" template="space_utilized"/>
+			</COLUMN>
+        </ROW>
+        <ROW>
+			<COLUMN width="50%">
+				<element width="100%" template="routing"/>
+			</COLUMN>
+			<COLUMN width="25%">
+				<element width="100%" template="customs_broker"/>
+			</COLUMN>
+            <COLUMN width="25%">
+				<element width="100%" template="declared_value"/>
+			</COLUMN>            
+        </ROW>
+        <ROW>
+            <COLUMN width="50%">
+				<element width="100%" template="pickup_information"/>
+			</COLUMN>
+            <COLUMN width="25%">
+				<element width="100%" template="delivery_date"/>
+			</COLUMN>
+			<COLUMN width="25%">
+				<element width="100%" template="cod_amount"/>
+			</COLUMN>
+        </ROW>
+    </SECTION>
+</BOL>

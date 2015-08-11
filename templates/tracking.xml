@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TRACKING>
+  	<entries_per_page>10</entries_per_page>
+    <page_numbers>5</page_numbers>
+	<default_sort>1</default_sort>
+    <COLUMNS>
+        <column key="ProDate">date</column>
+        <column key="Pbnum">probill_no</column> 
+        <column key="Rec-Status">status</column>
+        <column key="ShipName">ship_name</column>
+        <column key="City">ship_city</column>
+        <column key="Prv">ship_province</column>
+        <column key="ConsigName">cons_name</column>
+        <column key="ConAdd-1">cons_addr</column>
+        <column key="ConCity">cons_city</column>
+        <column key="ConPrv">cons_province</column>
+    </COLUMNS>
+	<LAYOUT>
+		<block width='33%' title='shipper'>
+			<data width='100%' key='ShipName'>address_name</data>
+			<data width='100%' key='Tel'>address_phone</data>
+			<data width='100%' key='Add-1'>address_street1</data>
+			<data width='100%' key='Add-2'>address_street2</data>
+			<data width='100%' key='City'>address_city</data>
+			<data width='100%' key='Prv'>address_province</data>
+			<data width='100%' key='Postal'>address_postal</data>
+		</block>
+		<block width='33%' title='consignee'>
+			<data width='100%' key='ConsigName'>address_name</data>
+			<data width='100%' key='Contel'>address_phone</data>
+			<data width='100%' key='ConAdd-1'>address_street1</data>
+			<data width='100%' key='ConAdd-2'>address_street2</data>
+			<data width='100%' key='ConCity'>address_city</data>
+			<data width='100%' key='ConPrv'>address_province</data>
+			<data width='100%' key='ConPostal'>address_postal</data>
+		</block>
+		<block width='34%' title='details'>
+			<data width='100%' key='ProDate'>date</data>
+			<data width='100%' key='Pbnum'>minimax_num</data>
+			<data width='100%' key='Pieces'>pieces</data>
+			<data width='100%' key='Weight'>weight</data>
+			<data width='100%' key='Location'>location</data>
+			<link width='100%' key='bl'>bl</link>
+			<link width='100%' key='pod'>pod</link>
+		</block>
+		<block width='40%' title='status_log'>
+			<table width='100%' key='StatusLog' array='Status' max_rows='8'>
+				<column width="25%" key='Dt'>date</column>
+				<column width="25%" key='Tm'>time</column>
+				<column width="50%" key='Remarks'>remarks</column>
+			</table>
+		</block>
+		<block width='60%' title='rates' key="RateDetails">
+			<table width='100%' key='Rates' array='Rate' max_rows='7'>
+				<column width="8%" key='Code'></column>
+				<column width="48%" key='Descr1'>Line</column>
+				<column width="8%" key='Quant'>Qty</column>
+				<column width="10%" key='Weight'>weight</column>
+				<column width="8%" key='Rate'>rate</column>
+				<column width="8%" key='Uom'>per</column>
+				<column width="10%" key='Tot'>total</column>
+			</table>
+			<data width='33%' key='Rate'>rate</data>
+			<data width='33%' key='Gstamt'>GST/HST</data>
+			<data width='33%' key='Tot'>total</data>
+		</block>
+	</LAYOUT>
+</TRACKING>

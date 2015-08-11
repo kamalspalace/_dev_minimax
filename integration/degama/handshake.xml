@@ -1,0 +1,5 @@
+<REQUEST>
+  <HANDSHAKE>
+    <bill_to_code>{$bill_to_code}</bill_to_code>
+  </HANDSHAKE>
+</REQUEST>

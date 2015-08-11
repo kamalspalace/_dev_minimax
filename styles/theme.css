@@ -1,0 +1,931 @@
+@charset "utf-8";
+
+.ui-widget,
+#shipon_wrapper
+{
+    font-family:"Arial", Arial, Sans-serif;
+    font-size: 15px;
+    color: #252A28;
+}
+
+#shipon_wrapper
+{
+    border: 1px solid #444;        
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+	
+	-moz-box-shadow:    0 0 10px 1px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
+	box-shadow:         0 0 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+#shipon_login_inputs
+{
+	font-weight: bold;
+	color: #232013;
+}
+
+#shipon_header
+{
+    background: rgb(0,0,0) url("shiponline/theme/header.png") 50% 50% repeat-x;
+}
+
+#shipon_header_wrapper
+{
+	background: #960202;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+	#shipon_overlay
+	{
+		background: #111;
+		opacity: .40;
+		filter: Alpha(Opacity=40);
+		z-index: 1000;
+	}
+
+
+	#shipon_loading
+	{
+		color: #f1f1f1;
+		font-weight: bold;	
+		font-size:14px;
+		padding-right: 10px;
+		text-shadow:1px 1px 0px #000;
+		
+		background: #333 url('shiponline/theme/ajax-loader.gif') 49% 87% no-repeat;
+		border: 1px solid #444;
+		
+	    -webkit-border-radius: 5px;
+	    -moz-border-radius: 5px;
+	    border-radius: 5px;    
+	    -moz-box-shadow:    0 0 7px rgba(0,0,0,0.6);
+		-webkit-box-shadow: 0 0 7px rgba(0,0,0,0.6);
+		box-shadow:         0 0 7px rgba(0,0,0,0.6);
+
+		-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+		filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+		z-index: 1001;
+	}
+
+	#shipon_content h3
+	{
+	    background: url("shiponline/theme/section_header2.png") !important;
+	    border: 1px solid #960202 !important;
+	    line-height: 30px;
+	    color: #FFF9F9;
+	    font-weight: bold;
+	    text-shadow: 1px 1px 1px #683232;
+	}
+
+	#shipon_bol_address_section
+	{
+		margin-top: 10px !important;
+		height: 425px !important;
+	}
+	
+	#shipon_bol_goods_section 
+	{
+		margin-top: 10px !important;
+		height: 425px !important;
+	}	
+
+	.shipon_popup
+	{
+		height: auto !important;
+	}
+
+	.shipon_popup .shipon_input:disabled,
+	.shipon_form input:disabled
+	{
+	    border: 0;
+	    background: #D1D1D1;
+	    padding: 4px;
+	}
+	.shipon_form select:disabled
+	{
+	    border: 0;
+	    background: #bbb;
+	    padding: 3px;
+	}
+
+	.shipon_form input[disabled], 
+	.shipon_form textarea[disabled],
+	.shipon_form input[readonly] 
+	{
+		border: 1px solid #000;
+		background-color: #bbb;
+		padding: 2px;
+	}
+	
+	.shipon_form select[disabled]
+	{
+		border: 0;
+		background-color: #bbb;
+		padding: 3px;
+	}
+
+	@media screen
+	{
+		.ui-dialog,
+		.ui-datepicker,
+		.shipon_field_container
+		{
+			background: #000 url(shiponline/theme/highlight.png) top right no-repeat;
+		}
+	}
+
+
+	.ui-dialog,
+	.ui-datepicker,
+	.shipon_field_container
+	{
+	    border: 1px solid #444;
+	    
+	    -webkit-border-radius: 5px;
+	    -moz-border-radius: 5px;
+	    border-radius: 5px;
+		
+	    -moz-box-shadow:    0 0 7px rgba(0,0,0,0.6);
+		-webkit-box-shadow: 0 0 7px rgba(0,0,0,0.6);
+		box-shadow:         0 0 7px rgba(0,0,0,0.6);
+	}
+
+	.ui-dialog-titlebar,
+	.shipon_title
+	{
+		border: none;
+	    border-radius: 0;
+		background: url("shiponline/theme/title-highlight.png") repeat-x;
+		height: 26px;
+	}
+
+	.ui-dialog-title,
+	.ui-datepicker-title,
+	.shipon_titletext
+	{
+		color: #E9E9E9;
+		font-weight: bold;
+	}
+
+	.shipon_titlelabel
+	{
+		text-shadow: #282526 0 0 10px;
+		color: #D0D0D0;
+		font-weight: bold;
+	}
+
+	.ui-dialog-content,
+	.ui-datepicker-calendar,
+	.ui-timepicker-div dl,
+	.shipon_field_content
+	{
+	    background: #FAFAFA !important;
+	    border: 1px solid #5d6c7a !important;
+	    
+	    -moz-box-shadow:    0 0 70px #4D4D4D;
+		-webkit-box-shadow: 0 0 70px #4D4D4D;
+		box-shadow:         0 0 70px #4D4D4D;
+	}
+
+	/* JR: FILLER BLOCK STYLE */
+	.shipon_filler
+	{
+		float: left;
+	}
+
+	.shipon_filler .shipon_field_content
+	{
+		color: #fff !important;
+		border: none !important;
+		background-color: #fff !important;
+		-moz-box-shadow: none !important;
+		-webkit-box-shadow: none !important;
+		box-shadow: none !important;
+	}
+	/* JR: END FILLER BLOCK STYLE */
+
+	.shipon_input,
+	.shipon_select
+	{
+	    border: 1px solid #000;
+	    font-size: 12px !important;
+	    background: #fff;
+	    color: #000;
+	    font-weight: normal;
+	}
+
+	.shipon_titleblock input
+	{
+	    border: 2px solid #555A58;
+	}
+
+	.shipon_button
+	{
+	    border: 1px solid #960202;
+	    font-size: 14px; 
+	    -webkit-border-radius: 3px;
+	    -moz-border-radius: 3px;
+	    border-radius: 3px;
+	}
+
+	.shipon_radio label
+	{
+	    background-color: #fff;
+	    background: #a81c01 url("shiponline/theme/button6.png") repeat-x !important;  
+	    border: 1px solid #860202 !important;
+	}
+
+	.shipon_radio label.ui-state-active,
+	.shipon_button:active
+	{
+	   -moz-box-shadow:    inset 0px 0px 3px rgba(0, 0, 0, 0.6);
+	   -webkit-box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.6);
+	   box-shadow:         inset 0px 0px 3px rgba(124, 121, 121);
+	   color: #990d00 !important;
+	   background: #fff !important;
+	   background-color: #fff !important;
+	   text-shadow: none;
+	}
+
+	.shipon_header_button
+	{
+	   border: none;
+	   -moz-box-shadow:    inset 0 4px 11px rgba(0, 0, 0, 0.4);
+	   -webkit-box-shadow: inset 0 4px 11px rgba(0, 0, 0, 0.4);
+	   box-shadow:         inset 0 4px 11px rgba(0, 0, 0, 0.4);
+
+	   width: 110px;
+	   height: 55px;
+	   height: 54px\9;
+	   margin: 5px 0px 0px 4px;
+	   margin-top: 6px\9;
+	   padding-top: 5px !important;   
+
+	   color: #fff !important;
+	   text-shadow: #282526 1px 1px 2px;
+
+	   background: rgba(0, 0, 0, 0.1);
+	}
+
+	.ie8 .shipon_header_button
+	{
+	   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#666666', endColorstr='#000000'); /* IE */
+	}
+
+	.shipon_button_disabled
+	{
+	    opacity: .40;
+		filter: Alpha(Opacity=40);
+	}
+
+	.shipon_radio label.ui-state-hover,
+	.shipon_button:hover
+	{
+	    color: #960202;
+	}
+
+	.shipon_radio .ui-state-default
+	{
+	    color: #fff;
+	}
+
+	.shipon_header_button:hover,
+	.shipon_header_button_hover
+	{
+		background-color: rgba(255,255,255,0.1);
+	}
+
+	.ie8 .shipon_header_button:hover,
+	.ie8 .shipon_header_button_hover
+	{
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#888888', endColorstr='#000000'); /* IE */
+	}
+
+	.ui-dialog-titlebar-close,
+	.shipon_titlebutton
+	{
+	    background: url(shiponline/theme/red_button.png);
+	    font-weight: bold;
+	    color: #FFF !important;
+	    border: 1px solid #444;
+	    
+	    text-shadow: black 0 0 3px;    
+	    -webkit-border-radius: 0px;
+	    -webkit-border-bottom-right-radius: 3px;
+	    -webkit-border-bottom-left-radius: 3px;
+	    -moz-border-radius: 0x;
+	    -moz-border-radius-bottomright: 3px;
+	    -moz-border-radius-bottomleft: 3px;
+	    border-radius: 0px;
+	    border-bottom-right-radius: 3px;
+	    border-bottom-left-radius: 3px;
+	}
+
+	#shipon_account_popup input, #shipon_edit_account_popup input
+	{
+		margin-bottom: 1px;
+	}
+
+	#shipon_account_popup .dialog_action, #shipon_edit_account_popup .dialog_action
+	{
+		margin-right: 2px;
+	}
+
+
+	#shipon_tracking_update
+	{
+		float: right;
+		margin: -30px 5px 0px 50px;
+
+	}
+
+	#shipon_back,#shipon_continue,#shipon_login, .address_save, .shipon_radio label, .shipon_page_button, .shipon_page_nav, .dialog_action, #shipon_delete_yes, #shipon_delete_no, #shipon_relogin_login, #shipon_relogin_cancel
+	{
+		-moz-box-shadow:inset 0px 1px 0px 0px #f5978e;
+		-webkit-box-shadow:inset 0px 1px 0px 0px #f5978e;
+		box-shadow:inset 0px 1px 0px 0px #f5978e;
+		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #D64F45), color-stop(1, #990d00) );
+		background:-moz-linear-gradient( center top, #D64F45 5%, #990d00 100% );
+		/* filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#D64F45', endColorstr='#990d00'); */
+		background-color:#990d00;
+		-moz-border-radius:4px !important;
+		-webkit-border-radius:4px !important;
+		-khtml-border-radius:4px !important;
+		border:1px solid #960202;
+		display:inline-block;
+		color:#ffffff !important;
+		font-family:arial;
+		font-size:13px;
+		font-weight:bold;
+		padding:4px 20px;
+		max-height: 26px;
+		text-decoration:none;
+		text-shadow:1px 1px 0px #7a0a02;
+		-webkit-font-smoothing: antialiased;
+		line-height: 16px;
+	}
+
+	.dialog_action
+	{
+		padding: 3px 20px;
+		margin-top: 3px;
+	}
+
+	#shipon_delete_yes, #shipon_delete_no, #shipon_relogin_login, #shipon_relogin_cancel
+	{
+		padding: 3px 10px;
+		margin-top: 3px;
+	}
+
+	#shipon_back:hover,#shipon_continue:hover,#shipon_login:hover,.address_save:hover,.shipon_page_button:hover,.shipon_page_nav:hover, .dialog_action:hover, #shipon_delete_yes:hover, #shipon_delete_no:hover, #shipon_relogin_login:hover, #shipon_relogin_cancel:hover
+	{
+		-moz-box-shadow:inset 0px 1px 0px 0px #cc6b62;
+		-webkit-box-shadow:inset 0px 1px 0px 0px #cc6b62;
+		box-shadow:inset 0px 1px 0px 0px #cc6b62;	
+		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #990d00), color-stop(1, #D64F45) );
+		background:-moz-linear-gradient( center top, #990d00 5%, #D64F45 100% );	
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#990d00', endColorstr='#D64F45');
+		background-color: #990d00;
+		cursor: pointer;
+	}
+
+	.shipon_page_button
+	{
+		height: 20px;
+		padding: 0px;
+		line-height: 20px;
+	}
+
+	.shipon_page_nav
+	{
+		height: 20px;
+		padding: 0px 10px;
+		line-height: 20px;
+	}
+
+	label[for=shipon_charges_prepaid]
+	{
+		width: 60px;
+		padding: 2px 0px;
+		border-top-right-radius: 0px !important;
+		border-bottom-right-radius: 0px !important;
+	}
+	label[for=shipon_charges_collect] 
+	{
+		width: 60px;
+		padding: 2px 0px;
+		border-radius: 0px !important;
+	}
+	label[for=shipon_charges_third]
+	{
+		width: 60px;
+		padding: 2px 0px;
+		border-top-left-radius: 0px !important;
+		border-bottom-left-radius: 0px !important;
+	}
+	label[for=shipon_unit_metric]
+	{
+		width: 80px;
+		padding: 1px 0px;
+		margin: 0px 0px 0px 0px;
+		border-top-right-radius: 0px;
+		border-bottom-right-radius: 0px;
+	}
+	label[for=shipon_unit_imperial]
+	{
+		width: 80px;
+		padding: 1px 0px;
+		margin-right: 2px !important;
+		border-top-left-radius: 0px;
+		border-bottom-left-radius: 0px;
+	}
+
+	.address_save
+	{
+		padding: 3px 18px;
+	}
+
+	.ui-dialog-titlebar-close.ui-state-hover,
+	.shipon_titlebutton:hover,
+	.shipon_titlebutton_hover
+	{
+	    background-image: url("shiponline/theme/red_button_active.png") !important;    
+	    -moz-box-shadow:    0 0 8px rgba(255, 0, 0, 0.7);
+	    -webkit-box-shadow: 0 0 8px rgba(255, 0, 0, 0.7);
+	    box-shadow:         0 0 8px rgba(255, 0, 0, 0.7);
+	}
+
+	.ui-dialog-titlebar-close.ui-state-hover
+	{
+	    border: 1px solid #444 !important;
+	}
+
+	.shipon_select.shipon_disabled[disabled]
+	{
+	    background-color: #000;
+	}
+
+	.shipon_delete_message
+	{
+	    background: #EEE;
+	    opacity: .80;
+		filter: Alpha(Opacity=80);
+		font-size: 24px;
+	}
+
+	.shipon_table_even
+	{
+	    background: #D1D1D1;
+	}
+
+	.shipon_table_odd
+	{
+	    background: #EEE;
+	}
+
+	.shipon_table_odd th
+	{
+	   font-size: 13px;
+	   font-weight: bold !important;
+	   padding: 0px 10px;
+	}
+
+	.shipon_table_even td, .shipon_table_odd td 
+	{
+	    font-size: 13px;
+	    padding: 0px 10px 0px 10px;
+	}
+
+	.shipon_default_address
+	{
+	    background: #ddd;
+	}
+
+	#shipon_accounts th,
+	#shipon_history th,
+	#shipon_tracking th
+	{
+	    font-weight: bold !important;
+	    text-align: center !important;
+	    font-size: 13px;
+	    cursor: default;
+	    background-color: #dadada;
+	    border-left: 1px solid #b4b4b4;
+	    border-bottom: 1px solid #b4b4b4;
+	    box-shadow: inset -1px 1px 0px 0px rgb(255, 255, 255);
+	    -webkit-box-shadow: inset 1px 1px 0px 0px #fff;
+	    -moz-box-shadow: inset 0px 1px 0px 0px rgb(255, 255, 255);
+	 
+	}
+
+	#shipon_history th:first-child, #shipon_accounts th:first-child
+	{	
+		border-left: 1px solid #fff !important;
+		-webkit-box-shadow: inset 0px 1px 0px 0px #fff !important;
+	}
+
+	#shipon_tracking_date
+	{ 
+	   border-left: 1px solid #fff !important;
+	   -webkit-box-shadow: inset 0px 1px 0px 0px #fff !important;
+	}
+
+	#shipon_tracking tr:hover
+	{
+		background-color: #BEBEBE;
+		cursor: pointer;
+	}
+
+	#shipon_pages
+	{
+	    background-color: #413f3f;
+	    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.2, #413f3f), color-stop(1, #181818) );
+	    background:-moz-linear-gradient( center top, #413f3f 20%, #181818 100% );
+	    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#413f3f', endColorstr='#181818');
+	    border-top: 1px solid #fff;
+	    line-height: 30px;
+		color: #232013;
+	    height: 35px;
+	    padding-top: 2px;
+
+	}
+
+	.ui-accordion-header
+	{
+	    background: #CCC;
+	}
+
+	.ui-state-hover
+	{
+	    background: #EEE !important;
+	}
+
+	.ui-datepicker-next-hover,
+	.ui-datepicker-prev-hover
+	{
+	    -webkit-border-radius: 3px;
+	    -moz-border-radius: 3px;
+	    border-radius: 3px;
+	}
+
+	.ui-autocomplete
+	{
+	    
+	}
+
+	.ui-menu-item
+	{
+	    background: #CCC;
+	}
+
+	.ui-menu-item a
+	{
+	    
+	}
+
+	#shipon_tracking_details
+	{
+		background: rgba(50, 50, 50, 0.95);
+	}
+
+	.shipon_details_title
+	{
+		background: rgba(0,0,0,0.2);
+	}
+
+	.shipon_details_block_container
+	{
+		background: rgba(0,0,0,0.4);
+	}
+
+	.shipon_details_label
+	{
+		font-weight: bold;
+	}
+
+	#shipon_tracking_close
+	{
+		padding: 0 10px;
+	}
+
+	#shipon_tracking_content .shipon_field_content, #shipon_address_book_content .shipon_field_content, #shipon_manage_accounts_content .shipon_field_content, #shipon_history_content .shipon_field_content,
+	#shipon_settings_content .shipon_field_content
+	{
+		max-height: 462px !important;
+		border: none !important;
+		box-shadow: none;
+		-webkit-box-shadow: none;
+		margin: 0px !important;
+		padding: 0px !important;
+	}
+
+	#shipon_tracking_content .shipon_field_container, #shipon_address_book_content .shipon_field_container, #shipon_manage_accounts_content .shipon_field_container, #shipon_history_content .shipon_field_container,
+	#shipon_settings_content .shipon_field_container
+	{
+		margin: 0px;
+		background: none;
+		border: none;
+		border-radius: 0px;
+		-webkit-border-radius: 0px;
+	}
+
+	#shipon_tracking_content .shipon_title 
+	{
+		background: url("shiponline/theme/section_header2.png") repeat-x !important;
+		padding: 0px 5px 0px 5px !important;
+		height: 40px !important;
+		border-bottom: 1px solid rgb(122, 0, 0);
+		border-top: 1px solid rgb(241, 134, 134);
+	}
+
+	#shipon_address_book_content .shipon_title, #shipon_manage_accounts_content .shipon_title, #shipon_history_content .shipon_title, #shipon_settings_content .shipon_title
+	{
+		background: url("shiponline/theme/section_header2.png") repeat-x !important;
+		height: 38px !important;
+		color: #fff;
+		border-bottom: 2px solid #c95959;
+		box-shadow: inset 0px 1px 0px rgb(207, 98, 98);
+		-webkit-box-shadow: inset 0px 1px 0px rgb(207, 98, 98);
+		-moz-box-shadow: inset 0px 1px 0px rgb(207, 98, 98);
+		text-shadow: 1px 1px 0px #000;
+		-webkit-text-shadow: 1px 1px 0px #000;
+		-moz-text-shadow: 1px 1px 0px #000;
+	}
+
+	#shipon_address_book_content .shipon_titletext,
+	#shipon_manage_accounts_content .shipon_titletext,
+	#shipon_history_content .shipon_titletext,
+	#shipon_tracking_content .shipon_titletext,
+	#shipon_settings_content .shipon_titletext
+	{
+		font-size: 18px;
+		margin-left: 3px;
+		text-shadow: 0px 1px 0px #000;
+		-webkit-text-shadow: 1px 1px 0px #000;
+		-moz-text-shadow: 1px 1px 0px #000;
+		padding: 10px 0px 0px 0px;
+		color: #fff;
+		font-weight: normal;
+		vertical-align: middle;
+		padding-bottom: 10px !important;
+		margin-top: 0px;
+	}
+
+	#shipon_tracking_search
+	{
+		color: #fff;
+		float: right;
+		width: 223px;
+		background: rgb(133, 1, 1);
+		border: 1px solid #7a0000;	
+		border-radius: 2px;
+		box-shadow: 0px 1px 1px rgb(213, 149, 149);
+		margin-top: 8px;
+		margin-left: 5px;
+		margin-right: 4px;
+		font-family: Helvetica, sans-serif !important;
+		font-size: 12px;
+		font-weight: normal;
+		padding-top: 7px;
+		padding-left: 6px;
+		padding-bottom: 5px;
+		position: relative;
+		z-index: 10;
+		min-height: 15px;
+	}
+
+	.ie8 #shipon_tracking_search
+	{
+		padding-top: 6px;
+	}
+
+	#shipon_tracking_probill_no
+	{
+		width: 65px !important;
+	}
+	#shipon_tracking_status
+	{
+		width: 55px !important;
+	}
+
+	#shipon_tracking_shbol
+	{
+		width: 75px !important;
+	}
+
+	#shipon_tracking_cons_name, #shipon_tracking_cons_addr
+	{
+		padding: 0px 8px !important;
+	}
+
+	#shipon_BOL
+	{
+		background: #BBB;
+	}
+
+	#shipon_bol_footer
+	{
+		background: url('shiponline/theme/header.png') -30px;
+	}
+	.shipon_help_icon
+{
+	float: right;
+	cursor: pointer;
+}
+.qtip
+{
+	max-width: 224px !important;
+}
+
+/* hiding features under construction */
+#address_book, #history, #bol, #manage_accounts
+{
+/*	display: none; */
+}	
+
+a {
+    cursor: pointer;
+}
+a:hover {
+}
+a img {
+    border: medium none;
+}
+
+#shipon_rates_table {
+    border-collapse: collapse;
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: left;
+    z-index: 1;
+}
+
+#shipon_rates_table tr {
+    height: 20px;
+}
+
+#shipon_rates_table th {
+    padding-left: 10px;
+}
+
+#shipon_rates_table_container {
+    max-height: 105px;
+    min-height: 99px;
+    overflow: auto;
+    position: relative;
+}
+
+input#shipon_rate_fsc, input#shipon_rate_charge, input#shipon_tax_charge, input#shipon_total_charge {
+    margin-bottom: 1px;
+}
+
+#shipon_weight, #shipon_pieces, input#shipon_rate_fsc, input#shipon_rate_charge, input#shipon_tax_charge, input#shipon_total_charge {
+    background-color: transparent;
+    border: 1px solid #000;
+    color: #666666;
+    padding: 2px;	
+}
+
+input.shipon_error
+{
+    border: 1px solid #912323 !important;
+    background: #f78b83 !important;
+}
+
+.shipon_button_dialog
+{
+    border: 1px solid;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	box-shadow: inset 1px 1px 1px 0px #fff;
+	background: linear-gradient(to bottom, #F1F1F1, #D1D1D1);
+	font-weight: normal;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 35px;
+	-webkit-font-smoothing: antialiased;
+	text-decoration: none;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+	margin-right: 2px;
+	font-size: 14px;
+	color: #333;
+}
+
+.shipon_button_dialog:hover
+{
+	color: #960202;
+	cursor: pointer;
+	border: 1px solid #eee;
+	box-shadow: inset 1px 1px 1px 0px #a2a2a2;
+	background: #e2e2e2 !important;
+}
+
+#shipon_history tbody td,
+#shipon_accounts tbody td
+{
+	text-align: center;
+	padding-left: 5px;
+}
+#shipon_history tbody td a
+{
+	align: center;
+	padding-left: 5px;
+}
+
+#shipon_history tbody tr td:last-child,
+#shipon_accounts tbody tr td:last-child
+{	
+	padding-left: 12px;
+
+}
+
+#shipon_history tbody tr:last-child,
+#shipon_accounts tbody tr:last-child
+{
+	height: 42px !important;
+}
+
+#shipon_address_book tr:last-child 
+{
+	height: 94px;
+}
+
+.shipon_sort_DESC {
+    background-image: url("shiponline/theme/sort_desc.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.shipon_sort_ASC {
+    background-image: url("shiponline/theme/sort_asc.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+#quote_search {
+    background: url("shiponline/theme/icon_search2.png") no-repeat scroll 0 0 #FFFFFF;
+    display: inline-block;
+    height: 11px;
+    left: 260px;
+    opacity: 0.65;
+    position: relative;
+    top: -5px;
+    width: 11px;
+}
+.searchBtnEmptyClass span {
+    color: #535353;
+    float: left;
+    font-size: 14px;
+    margin: -12px 0 0 10px;
+}
+
+#shipon_address_book .shipon_button
+{
+    border: 1px solid;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	box-shadow: inset 1px 1px 1px 0px #fff;
+	background: linear-gradient(to bottom, #F1F1F1, #D1D1D1);
+	font-weight: normal;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 35px;
+	-webkit-font-smoothing: antialiased;
+	text-decoration: none;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+	margin-right: 2px;
+	font-size: 14px;
+	color: #333;
+}
+
+#shipon_address_book .shipon_button:hover
+{
+	color: #960202;
+	cursor: pointer;
+	border: 1px solid #eee;
+	box-shadow: inset 1px 1px 1px 0px #a2a2a2;
+	background: #e2e2e2 !important;
+}
+
+
+#shipon_address_book tr.shipon_table_even .shipon_button:hover
+{
+	border: 1px solid #D1D1D1;
+}
+
+

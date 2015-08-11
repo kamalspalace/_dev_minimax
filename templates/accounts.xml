@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ACCOUNTS>
+  	<entries_per_page>10</entries_per_page>
+    <page_numbers>5</page_numbers>
+    <content>
+    <colomn width="4%"  column="id">id</colomn>
+    <colomn width="21%" column="username">username</colomn>
+    <colomn width="21%" column="name">name</colomn>
+	<colomn width="13%" column="phone">phone</colomn>
+	<colomn width="5%"  column="ext">ext</colomn>
+	<colomn width="23%" column="email">email</colomn>
+    <colomn width="20%">action</colomn>
+    </content>
+	<popup>
+		<block width="100%">
+			<label style="float: left; text-align: left; width: 75px;">address_name</label>
+			<input type='text' edit='false' id='shipon_account_name' name='shipon_account_name' class='shipon_input'></input>
+		</block>
+		
+		<block width="70%">
+			<label style="float: left; text-align: left; width: 76px;">address_phone</label>
+			<input type='text' edit='true' onkeydown="formatTelNo (this);" id='shipon_account_phone' name='shipon_account_phone' class='shipon_input'></input>
+		</block>
+		
+		<block width="30%">
+			<label style="float: left; text-align: right; width: 37px; margin-right: 1px;">address_phone_ext</label>
+			<input type='text' edit='true' id='shipon_account_ext' name='shipon_account_ext' class='shipon_input'></input>
+		</block>
+		
+		<block width="100%">
+			<label style="float: left; text-align: left; width: 75px;">address_email</label>
+			<input type='text' edit='true' id='shipon_account_email' name='shipon_account_email' class='shipon_input'></input>
+		</block>
+	</popup>
+</ACCOUNTS>

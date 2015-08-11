@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<GOODS>
+	<max_rows>10</max_rows>
+	<COLUMNS>
+		<colomn width="10%">num_of_packages</colomn>
+		<colomn width="18%">package_type_ext</colomn>
+		<colomn width="12%">commodity_type</colomn>
+		<colomn width="25%">description</colomn>
+		<colomn width="20%">dimensions</colomn>
+		<colomn width="10%">weight</colomn>
+	</COLUMNS>
+</GOODS>

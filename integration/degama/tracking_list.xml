@@ -1,0 +1,27 @@
+<REQUEST>
+  <TRACKING_LIST>
+    <start_date>{$request.start_date}</start_date>
+    <end_date>{$request.end_date}</end_date>
+    <bill_to_code>{$request.bill_to_code}</bill_to_code>
+    <start_row>{$request.start_row}</start_row>
+    <sort_by>{$request.sort_column}</sort_by>
+    <order_by>{$request.sort_order}</order_by>
+    <number_of_entries>{$request.entries_per_page}</number_of_entries>
+    <search_string>{$request.search_string}</search_string>
+    <exclude_status>QTE,CNC</exclude_status>
+    <COLUMNS>
+      <column>ProDate</column>
+      <column>Pbnum</column>
+      <column>Rec-Status</column>
+      <column>ShipName</column>
+      <column>City</column>
+      <column>Prv</column>
+      <column>ConsigName</column>
+      <column>ConAdd-1</column>
+      <column>ConCity</column>
+      <column>ConPrv</column>
+      <column>Code</column>
+      <column>Sh-BOL</column>
+    </COLUMNS>
+  </TRACKING_LIST>
+</REQUEST>

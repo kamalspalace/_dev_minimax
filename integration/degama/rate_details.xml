@@ -1,0 +1,6 @@
+<REQUEST>
+	<TRACKING_DETAILS>
+		<pbnum>{$shipment.pbnum}</pbnum>
+		<bill_to_code>{$shipment.bill_account}</bill_to_code>
+	</TRACKING_DETAILS>
+</REQUEST>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TOOLTIPS>
+	<bol>
+		<section>
+			<tip>
+				<selector>#shipon_charges_tip</selector>
+				<content>
+					<title button="false">Billing Method</title>
+					<text>Select whether the shipper, consignee, or a third-party pays for the shipment.</text>
+				</content>
+				<position>
+					<my>bottom right</my>
+					<at>top center</at>
+				</position>
+			</tip>
+                        <tip>
+                                <selector>#shipon_pickup_tip</selector>
+                                <content>
+                                        <title button="false">Pickup</title>
+                                        <text>The time and date you would like your shipment to be picked up at.</text>
+                                </content>
+                                <position>
+                                        <my>bottom center</my>
+                                        <at>top center</at>
+                                </position>
+                        </tip>
+			<tip>
+				<selector>#shipon_reference_no_tip</selector>
+				<content>
+					<title button="false">Reference Number</title>
+					<text>The shipper’s reference number is an identifier for your shipment. This reference number could be a PO number, a sales order number, a customer’s job number, or anything to help you cross-reference this shipment.</text>
+				</content>
+				<position>
+					<my>bottom right</my>
+					<at>top center</at>
+				</position>
+			</tip>
+			<tip>
+				<selector>#shipon_payer_address_tip</selector>
+				<content>
+					<title button="false">Bill To</title>
+					<text>The information below specifies who the shipment will be billed to.</text>
+				</content>
+				<position>
+					<my>bottom right</my>
+					<at>top center</at>
+				</position>
+			</tip>
+			<tip>
+				<selector>#shipon_pickup_information_tip</selector>
+				<content>
+					<title button="false">Pickup Information</title>
+					<text>Please specify any special instructions for pick-up in this section.</text>
+				</content>
+				<position>
+					<my>bottom center</my>
+					<at>top center</at>
+				</position>
+			</tip>
+			<tip>
+				<selector>#shipon_delivery_information_tip</selector>
+				<content>
+					<title button="false">Delivery Information</title>
+					<text>Please specify any special instructions for delivery in this section.</text>
+				</content>
+				<position>
+					<my>bottom right</my>
+					<at>top center</at>
+				</position>
+			</tip>
+		</section>
+		<section>
+			<tip>
+				<selector>#shipon_goods_table tr:first th:nth-child(1)</selector>
+				<content>
+					<title button="false">Return</title>
+					<text>If you require a return, please specify the goods being returned. Click on Return to add a return row.</text>
+				</content>
+				<position>
+					<my>bottom center</my>
+					<at>top center</at>
+				</position>
+			</tip>
+			<tip>
+				<selector>#shipon_goods_table tr:first th:nth-child(3)</selector>
+				<content>
+					<title button="false">Type</title>
+					<text>Select the packaging type for this good.</text>
+				</content>
+				<position>
+					<my>bottom center</my>
+					<at>top center</at>
+				</position>
+			</tip>
+			<tip>
+				<selector>#shipon_goods_table tr:first th:nth-child(4)</selector>
+				<content>
+					<title button="false">Commodity</title>
+					<text>Select the type of goods being shipped.</text>
+				</content>
+				<position>
+					<my>bottom center</my>
+					<at>top center</at>
+				</position>
+			</tip>
+			<tip>
+				<selector>#shipon_goods_table tr:first th:nth-child(5)</selector>
+				<content>
+					<title button="false">Particulars</title>
+					<text>Usually general freight but indicate if any of these other conditions apply.</text>
+				</content>
+				<position>
+					<my>bottom center</my>
+					<at>top center</at>
+				</position>
+			</tip>
+			<tip>
+				<selector>#shipon_goods_table tr:first th:nth-child(7)</selector>
+				<content>
+					<title button="false">Weight</title>
+					<text>The weight for each package.</text>
+				</content>
+				<position>
+					<my>bottom center</my>
+					<at>top center</at>
+				</position>
+			</tip>
+			<tip>
+				<selector>label[for=shipon_unit_metric]</selector>
+				<content>
+					<title button="false">Metric</title>
+					<text>Ship with units of measure: cm, kg</text>
+				</content>
+				<position>
+					<my>bottom center</my>
+					<at>top center</at>
+				</position>
+			</tip>
+			<tip>
+				<selector>label[for=shipon_unit_imperial]</selector>
+				<content>
+					<title button="false">Imperial</title>
+					<text>Ship with units of measure: in, lbs</text>
+				</content>
+				<position>
+					<my>bottom center</my>
+					<at>top center</at>
+				</position>
+			</tip>
+			<tip>
+				<selector>#shipon_declared_value_tip</selector>
+				<content>
+					<title button="false">Declared Value</title>
+					<text>Maximum liability of $2.00 per lb/$4.40 per kg unless declaration value states otherwise. Additional insurance is available for a cost of $3.00 per $100 of value.</text>
+				</content>
+				<position>
+					<my>bottom center</my>
+					<at>top center</at>
+				</position>
+			</tip>
+		</section>
+		<section>
+			<tip>
+				<selector>#shipon_choose_return_tip</selector>
+				<content>
+					<title button="false">Return Service</title>
+					<text>If you require a return, please select goods coming back in the GOODS SECTION.</text>
+				</content>
+				<position>
+					<my>bottom center</my>
+					<at>top center</at>
+				</position>
+			</tip>			
+			<tip>
+				<selector>#shipon_vehicle_tip</selector>
+				<content>
+					<title button="false">Vehicle</title>
+					<text>In most cases, the vehicle is automatically selected. However, if you’re shipping an oversized item, please choose the appropriate vehicle.</text>
+				</content>
+				<position>
+					<my>bottom right</my>
+					<at>top center</at>
+				</position>
+			</tip>
+			<tip>
+				<selector>#shipon_pod_email_tip</selector>
+				<content>
+					<title button="false">P.O.D. Email</title>
+					<text>For proof of delivery confirmation, enter your email address here and a POD will be emailed to you.</text>
+				</content>
+				<position>
+					<my>bottom center</my>
+					<at>top center</at>
+				</position>
+			</tip>
+			<tip>
+				<selector>#shipon_gps_email_tip</selector>
+				<content>
+					<title button="false">GPS Email</title>
+					<text>For tracking updates, enter your email address and a link will be emailed to you where you can view real time where your shipment is in transit.</text>
+				</content>
+				<position>
+					<my>bottom center</my>
+					<at>top center</at>
+				</position>
+			</tip>
+			<tip>
+				<selector>#shipon_delivery_tip</selector>
+				<content>
+					<title button="false">Delivery Appointment</title>
+					<text>If you require a delivery appoint, please specify here. Please note this is mandatory for Tender deliveries.</text>
+				</content>
+				<position>
+					<my>bottom right</my>
+					<at>top center</at>
+				</position>
+			</tip>
+		</section>
+	</bol>
+	<settings>
+		<tip>
+			<selector>#shipon_account_setting_tip</selector>
+			<content>
+				<title button="false">Email Notifications</title>
+				<text>Enter comma separated list of email addresses to receive notifications.</text>
+			</content>
+			<position>
+				<my>bottom right</my>
+				<at>top center</at>
+			</position>
+		</tip>
+	</settings>
+</TOOLTIPS>

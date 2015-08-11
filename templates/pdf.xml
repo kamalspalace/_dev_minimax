@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PDF>
+	<pdf_width>1080</pdf_width>
+	<pdf_height>1380</pdf_height>
+	<pdf_pt_width>612</pdf_pt_width>
+	<pdf_pt_height>792</pdf_pt_height>
+	<LAYOUT>
+		<DATA>
+			<entry x="55" y="118" size="10" multiline="true" width="245" height="10">ship_name</entry>
+			<entry x="210" y="118" size="10">ship_contact</entry>
+			<entry x="55" y="128" size="10" >ship_street1</entry>
+			<entry x="55" y="138" size="10" >ship_street2</entry>
+			<entry x="55" y="148" size="10" >ship_city</entry>
+			<entry x="210" y="148" size="10" >ship_province</entry>
+			<entry x="55" y="158" size="10" >ship_postal</entry>
+			<entry x="55" y="190" size="10">cons_name</entry>
+			<entry x="210" y="190" size="10">cons_contact</entry>
+			<entry x="55" y="200" size="10" >cons_street1</entry>
+			<entry x="55" y="210" size="10" >cons_street2</entry>
+			<entry x="55" y="220" size="10" >cons_city</entry>
+			<entry x="210" y="220" size="10" >cons_province</entry>
+			<entry x="55" y="230" size="10" >cons_postal</entry>
+			<entry x="55" y="262" size="10" >bill_name</entry>
+			<entry x="55" y="272" size="10" >bill_street1</entry>
+			<entry x="55" y="282" size="10" >bill_street2</entry>
+			<entry x="55" y="292" size="10" >bill_city</entry>
+			<entry x="210" y="292" size="10" >bill_prov</entry>
+			<entry x="55" y="302" size="10" >bill_postal</entry>
+			<entry size="12" x="112"  y="483">total_pieces</entry>
+			<entry size="12" x="97" y="483">skids</entry>
+			<entry size="10" x="390" y="232">cargo_scn</entry>
+			<entry size="12" x="106" y="483">-</entry>
+			<entry size="12" x="243"  y="483">total_weight</entry>
+			<entry size="12" x="310"  y="485">uom_weight</entry>
+			<entry size="10" x="95" y="90">ext_id</entry>
+			<entry size="10" x="395" y="90">reference</entry>
+			<entry size="10" x="420" y="108">timestamp</entry>
+			<entry size="10" x="95" y="630" multiline="2">del_note</entry>
+		</DATA>
+		<RADIOS>
+			
+		</RADIOS>
+		<SELECT>
+			
+		</SELECT>
+		<GOODS>
+			<table_start_y>400</table_start_y>
+			<line_height>17</line_height>
+			<size>10</size>
+			<column_data>
+				<column>
+					<offset>45</offset>
+					<keys>
+						<entry>pieceskids</entry>
+						<static> x </static>
+						<select>
+							<options>
+								<GF>GF</GF>
+								<FDSTF>FDSTF</FDSTF>
+							</options>
+							<key>commodity</key>
+						</select>
+					</keys>
+				</column>
+				<column>
+					<offset>100</offset>
+					<keys>
+						<select>
+							<options>	
+								<B>Box</B>
+								<D>Drums</D>
+								<L>Bundles</L>
+								<O>Coils</O>
+								<P>Pieces</P>
+								<R>Rolls</R>
+								<S>Skids</S>								
+							</options>			
+						<key>packaging</key>
+						</select>
+					</keys>
+				</column>
+				<column>
+					<offset>170</offset>
+						<keys>
+							<entry>weight</entry>
+						</keys>
+					
+				</column>	
+				<column>
+					<offset>248</offset>
+					<keys>
+						<entry>particulars</entry>
+					</keys>
+				</column>
+			</column_data>
+		</GOODS>
+
+		<CUSTOM>
+		</CUSTOM>
+	</LAYOUT>
+</PDF>

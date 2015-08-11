@@ -1,0 +1,200 @@
+/* Datepicker border styling */
+.datepicker {
+  background-color: #F7F7F7;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px 5px 5px 5px;
+  padding: 10px;
+}
+
+/* Tighten up the spacing between multiple calendars */
+.datepickerSpace div {
+  width:1px;
+}
+
+/* Grey background behind Month Name row, and blue text */
+div.datepicker th {
+  background-color:#dadada;
+}
+div.datepicker th a.datepickerMonth {
+  color:rgb(39, 39, 39);
+  font-weight:normal;
+  text-shadow: 0px 1px 0px rgb(241, 241, 241);
+  font-size: 12px;
+  padding-left: 5px;
+}
+
+div.datepicker th a.datepickerMonth:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* style the day of week header cells */
+div.datepicker th {
+  color: black;
+  font-weight: bold;
+  text-shadow: 0px 1px 1px rgb(255, 255, 255);
+}
+/* grey underline beneath day of week row */
+div.datepicker table thead tr.datepickerDoW th {
+  border-bottom: 1px solid #CCCCCC;
+}
+
+/* Black text, white background, and grey borders around day cells */
+div.datepicker a,
+div.datepicker a:hover {
+  color: black;
+  font-size: 14px;
+  padding: 2px;
+}
+div.datepicker table.datepickerViewDays,
+div.datepicker table.datepickerViewMonths,
+div.datepicker table.datepickerViewYears {
+  background-color:white;
+}
+div.datepicker table tbody.datepickerDays td {
+  border: 1px solid #F7F7F7;
+}
+
+/* blue cell color for selected days */
+tbody.datepickerDays td.datepickerSelected {
+  background-color:#0077CC;
+}
+
+/* Grey out dates in the future */
+div.datepicker td.datepickerFuture a {
+  color:#DDDDDD;
+}
+
+/* yellow cell background on hover */
+div.datepicker tbody.datepickerDays td:hover {
+  background-color: #FFCC33;
+  cursor: pointer;
+}
+
+/* Bold today's date */
+div.datepicker td.datepickerToday a {
+  font-weight:bold;
+}
+
+/* cells are wider in the clean style */
+.datepickerYears a, .datepickerMonths a {
+  width: 42px;
+}
+.datepickerMonths td:first-child a,
+.datepickerYears td:first-child a {
+  width:39px;
+}
+div.datepicker th a.datepickerMonth {
+  width:121px;
+}
+
+      /* Style the calendar custom widget */
+      #date-range {
+      	position: relative;
+      	margin-top: 0px;
+      	float: right;
+      }
+      #date-range-field {
+        width: 222px;
+        height: 27px;
+        overflow: hidden;
+        position: relative;
+        cursor:pointer;
+	      background: rgb(133, 1, 1);
+        border: 1px solid rgb(122, 0, 0);
+        border-radius: 3px;
+	      box-shadow: 0px 1px 1px rgb(213, 149, 149);
+	      margin-top: 8px;
+      }
+      #date-range-field a  {
+        color: rgb(255, 255, 255) !important;
+        background-color: #be372d;
+        background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, rgb(190, 55, 45)), color-stop(1, rgb(153, 26, 15)) );
+	      background: -moz-linear-gradient( center top, rgb(190, 55, 45) 5%, rgb(153, 26, 15) 100% );
+        text-align:center !important;
+        display: block !important;
+        position: absolute !important;
+        width: 29px !important;
+        height: 24px !important;
+        top: 0 !important;
+        right: 0 !important;
+        text-decoration: none;
+        padding-top:4px;
+        border-radius: 0px 3px;
+	      font-size: 10px;
+      }
+      #date-range-field span {
+        font-size: 12px;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        position: relative;
+        top: 0;
+        height: 26px;
+        line-height: 28px;
+        left: -14px;
+        width: 250px;
+        text-align: center;
+      }
+      
+      #datepicker-calendar {
+        position: absolute;
+        top: 37px;
+        right: 0;
+        overflow: hidden;
+        width: 527px;
+        height:205px;
+        background-color: #fff;
+        border: 1px solid #000;
+        border-radius: 3px 0px 3px 3px;
+	-moz-border-radius: 3px 0px 3px 3px;
+	-webkit-border-radius: 3px 0px 3px 3px;
+        display:none;
+        padding:1px 0 0 0px;
+	      z-index: 10000;
+	      box-shadow: -1px 5px 10px rgb(155, 155, 155);
+      }
+
+      #datepickerUpdate {
+	 position: absolute;
+	 right: 0px;
+	 bottom: 0px;
+	 width: 530px;
+	 height: 34px;
+         background-color: #dadada;
+	 border-top: 1px solid #fff;
+	 border-bottom: 1px solid rgb(168, 168, 168);
+	 box-shadow: 0px -1px 0px rgb(182,182,182);
+ 	 z-index: 99999;
+      }
+
+      #datepickerBtUpdate {
+	margin-top: 3px;
+	float: right;
+	color: #fff;
+	padding: 3px 25px;
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #0078fa), color-stop(1, #074669) );
+	background: -moz-linear-gradient( center top, #0078fa 5%, #074669 100% );
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0078fa', endColorstr='#074669');
+	font-size: 14px;
+	border: 1px solid rgb(0, 0, 160);
+	box-shadow: inset 0px 1px 0px 0px rgb(185, 225, 252);
+	margin-right: 5px;
+	text-shadow: -1px 1px 1px rgb(2, 30, 56);
+	background-color: #000;
+	border-radius: 3px;
+      }
+
+      #datepickerBtUpdate:hover {
+        background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, rgb(7, 70, 150)), color-stop(1, rgb(0, 120, 250)) );
+	box-shadow: inset 0px -1px 0px 0px rgb(185, 225, 252);
+        cursor: pointer;
+
+      }
+      
+      /* Remove default border from the custom widget since we're adding our own.  TBD: rework the dropdown calendar to use the default borders */
+      #datepicker-calendar div.datepicker {
+        background-color: transparent;
+      border: none;
+      border-radius: 0;
+      padding: 0;
+    }

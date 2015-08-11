@@ -1,0 +1,6 @@
+<REQUEST>
+  <QUOTE_TO_ORDER>
+    <bill_to_code>{$shipment.bill_account}</bill_to_code>
+    <pbnum>{$shipment.ext_id}</pbnum>
+  </QUOTE_TO_ORDER>
+</REQUEST>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<HEADER>
+    <CHILD>
+        <input view="bol" icon="&#xe001;" />
+        <input view="history" icon="&#xe00c;" />
+        <input view="address_book" icon="&#xe019;" />
+        <input view="tracking" icon="&#xe021;" />
+    </CHILD>
+    <MASTER>
+        <input view="manage_accounts" icon="&#xe00f;" />
+		<input view="preferences" icon="&#xe010;"/>
+    </MASTER>
+	<LOGOUT/>
+</HEADER>

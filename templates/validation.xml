@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<VALIDATION>
+    <SECTION>
+        <FIELD>
+            <rule minlength="3">shipon_ship_name</rule>
+            <rule minlength="10">shipon_ship_phone</rule>
+	    <rule minlength="9" email="true">shipon_ship_email</rule>
+            <rule minlength="3">shipon_ship_street1</rule>
+            <rule minlength="3">shipon_ship_city</rule>
+            <rule minlength="2">shipon_ship_province</rule>
+	    <rule validateState="true">shipon_ship_province</rule>
+            <rule minlength="5">shipon_ship_postal</rule>
+        </FIELD>
+        <FIELD>
+            <rule minlength="3">shipon_cons_name</rule>
+            <rule minlength="10">shipon_cons_phone</rule>
+            <rule minlength="3">shipon_cons_street1</rule>
+            <rule minlength="3">shipon_cons_city</rule>
+            <rule minlength="2">shipon_cons_province</rule>
+ 	    <rule validateConsState="true">shipon_cons_province</rule>
+            <rule minlength="5">shipon_cons_postal</rule>
+        </FIELD>
+        <FIELD>
+            <rule minlength="3">shipon_bill_name</rule>
+            <rule minlength="5">shipon_bill_account</rule>
+        </FIELD>
+    </SECTION>
+    <SECTION>
+        <FIELD>
+        </FIELD>
+    </SECTION> 
+    <SECTION>
+        <FIELD>
+            <!--rule minlength="8">shipon_pickup_date</rule-->
+        </FIELD>
+        <FIELD>
+            <!--rule minlength="8">shipon_delivery_date</rule-->
+        </FIELD>
+	</SECTION>
+</VALIDATION>
